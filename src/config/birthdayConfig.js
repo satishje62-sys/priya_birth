@@ -29,11 +29,11 @@ export const birthdayConfig = {
   // -------------------------------------------------------------
   invitation: {
     badge: "Special Delivery For You 💌",
-    heading: "Hey, Beautiful Soul! 🎀",
+    heading: "Hey, Beautiful Priya! 🎀",
     subtext1: "Someone has created a tiny magical world just for you.",
     subtext2: "To unlock your birthday celebration, you must solve a few clever friendship puzzles! 💗",
     openButtonText: "OPEN YOUR LITTLE SURPRISE 💌",
-    envelopeLetter: `Dear Bestie,
+    envelopeLetter: `Dear Priya, 🌸
 
 Today is all about you. But before your birthday surprise begins, you must complete a tiny adventure of clever puzzles created with lots of love, a little madness, and countless memories.
 
@@ -262,7 +262,7 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
       }
     ],
     giftCard: {
-      tag: "Special Bestie Birthday Voucher 🎟️🎀",
+      tag: "Special Birthday Voucher For Priya 🎟️🎀",
       title: "Lifetime Friendship Warranty & Unlimited Hugs",
       perks: [
         "🌸 Unlimited 24/7 rant listening privileges (zero judgment)",
@@ -301,7 +301,7 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
     songPlayingText: "Now Playing: Happy Birthday Priya 🎶",
     voiceNoteTitle: "A Personal Voice Note Just For You 🎙️💕",
     voiceNoteCaption: "Press play to hear a special audio message recorded with love.",
-    voiceNoteFallbackText: "“Hey birthday girl! Just wanted to tell you how proud I am of you, how much you mean to me, and that I'll always be by your side. Have the most magical birthday ever!”",
+    voiceNoteFallbackText: "“Hey Priya! Just wanted to tell you how proud I am of you, how much our bond means to me, and that I'll always be by your side. Have the most magical birthday ever!” — Satish 🌸",
     nextButtonText: "ONE LAST LITTLE SECRET 💌"
   },
 
@@ -312,7 +312,7 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
     lockPrompt: "Before you go... there's one thing I want you to know.",
     unlockHint: "Click the glowing heart lock to reveal our friendship promise 💖",
     letterTitle: "A Promise of Friendship 🌷❤️",
-    letterText: `Dear HER_NAME,
+    letterText: `Dear Priya,
 
 Aaj tumse kuch promises karna chahta hoon, jo sirf likhne ke liye nahi, balki dil se nibhaane ke liye hain:
 
@@ -340,7 +340,7 @@ Friendship is not about being together every day, it's about knowing that someon
 
 Forever hoping to be your favourite friend! ❤️
 
-— YOUR_NAME 🌸`,
+— Satish 🌸`,
     replayButtonText: "REPLAY OUR ADVENTURE 🔄",
     gardenButtonText: "VISIT OUR MEMORY GARDEN 📸"
   }
