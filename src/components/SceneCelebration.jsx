@@ -1,20 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import confetti from 'canvas-confetti';
-import { Play, Pause, Volume2, VolumeX, Sparkles, Heart, ArrowRight, Music, Mic } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Sparkles, Heart, ArrowRight, Music } from 'lucide-react';
 import { birthdayConfig } from '../config/birthdayConfig';
 import { musicBoxPlayer, birthdaySongPlayer, playChime, getAudioContext } from '../utils/audioSynthesis';
 
 export default function SceneCelebration({ onComplete }) {
-  const { celebration, birthdayName, photos, birthdaySong, voiceMessage, memoryGarden } = birthdayConfig;
+  const { celebration, birthdayName, photos, birthdaySong, memoryGarden } = birthdayConfig;
 
   const [isPlayingSong, setIsPlayingSong] = useState(birthdaySongPlayer.isPlaying);
   const [songVolume, setSongVolume] = useState(birthdaySongPlayer.volume);
   const [isSongMuted, setIsSongMuted] = useState(birthdaySongPlayer.isMuted);
 
-  // Voice message player state
-  const [isPlayingVoice, setIsPlayingVoice] = useState(false);
-
-  const voiceRef = useRef(null);
   const fireworksCanvasRef = useRef(null);
 
   // Auto-trigger confetti bursts periodically
@@ -157,41 +153,12 @@ export default function SceneCelebration({ onComplete }) {
     };
   }, []);
 
-  // Voice note toggle
-  const handleToggleVoice = () => {
-    if (isPlayingVoice) {
-      if (voiceRef.current) voiceRef.current.pause();
-      setIsPlayingVoice(false);
-    } else {
-      if (voiceRef.current && voiceMessage) {
-        voiceRef.current
-          .play()
-          .then(() => setIsPlayingVoice(true))
-          .catch(() => {
-            // simulate playback
-            setIsPlayingVoice(true);
-            setTimeout(() => setIsPlayingVoice(false), 8000);
-          });
-      } else {
-        setIsPlayingVoice(true);
-        setTimeout(() => setIsPlayingVoice(false), 8000);
-      }
-    }
-  };
-
   const collagePhotos = memoryGarden.photos || [];
 
   return (
     <div className="scene-wrapper celebration-container">
       {/* Background fireworks canvas */}
       <canvas ref={fireworksCanvasRef} className="fireworks-canvas" aria-hidden="true" />
-
-      <audio
-        ref={voiceRef}
-        src={voiceMessage}
-        onEnded={() => setIsPlayingVoice(false)}
-        onError={() => {}}
-      />
 
       <div className="scene-badge" style={{ position: 'relative', zIndex: 10 }}>
         <Sparkles size={16} />
@@ -276,43 +243,6 @@ export default function SceneCelebration({ onComplete }) {
           />
         </div>
       </div>
-
-      {/* Personal Voice Note Card */}
-      {birthdayConfig.hasVoiceMessage && (
-        <div
-          className="glass-card"
-          style={{
-            maxWidth: 500,
-            margin: '20px auto',
-            padding: '20px 24px',
-            textAlign: 'left',
-            position: 'relative',
-            zIndex: 10
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Mic size={20} color="var(--rose-pink)" />
-              <h4 style={{ fontSize: '1.08rem', fontWeight: 700, color: 'var(--rose-deep)' }}>
-                {celebration.voiceNoteTitle}
-              </h4>
-            </div>
-            <button
-              type="button"
-              className="btn-secondary"
-              style={{ padding: '6px 14px', fontSize: '0.85rem' }}
-              onClick={handleToggleVoice}
-            >
-              {isPlayingVoice ? <Pause size={14} /> : <Play size={14} />}
-              <span>{isPlayingVoice ? 'Pause' : 'Play Voice Note'}</span>
-            </button>
-          </div>
-
-          <p style={{ fontSize: '0.92rem', color: 'var(--text-main)', fontStyle: 'italic', lineHeight: 1.5 }}>
-            {celebration.voiceNoteFallbackText}
-          </p>
-        </div>
-      )}
 
       {/* Friendship Photo Collage Grid */}
       <div style={{ position: 'relative', zIndex: 10, margin: '30px 0' }}>

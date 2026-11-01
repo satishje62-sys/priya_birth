@@ -21,8 +21,7 @@ export const birthdayConfig = {
   // 2. AUDIO SETTINGS
   // -------------------------------------------------------------
   birthdaySong: "/assets/birthday-song.mp3",
-  voiceMessage: "/assets/voice-message.mp3",
-  hasVoiceMessage: true,
+  hasVoiceMessage: false,
 
   // -------------------------------------------------------------
   // 3. SCENE 0 — THE MAGICAL INVITATION
@@ -299,9 +298,6 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
     playSongButton: "PLAY YOUR BIRTHDAY SONG 🎶",
     pauseSongButton: "PAUSE SONG ⏸️",
     songPlayingText: "Now Playing: Happy Birthday Priya 🎶",
-    voiceNoteTitle: "A Personal Voice Note Just For You 🎙️💕",
-    voiceNoteCaption: "Press play to hear a special audio message recorded with love.",
-    voiceNoteFallbackText: "“Hey Priya! Just wanted to tell you how proud I am of you, how much our bond means to me, and that I'll always be by your side. Have the most magical birthday ever!” — Satish 🌸",
     nextButtonText: "ONE LAST LITTLE SECRET 💌"
   },
 
