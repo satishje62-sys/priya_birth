@@ -312,21 +312,35 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
     lockPrompt: "Before you go... there's one thing I want you to know.",
     unlockHint: "Click the glowing heart lock to reveal our friendship promise 💖",
     letterTitle: "A Promise of Friendship 🌷❤️",
-    letterText: `Dear Bestie,
+    letterText: `Dear HER_NAME,
 
-Birthdays come every year, but people who make life feel a little more beautiful are truly special.
+Aaj tumse kuch promises karna chahta hoon, jo sirf likhne ke liye nahi, balki dil se nibhaane ke liye hain:
 
-Thank you for the laughs, the memories, the comfort, and all the little things that make our friendship ours.
+🤝 1. Promise karta hoon ki tumhari friendship ki hamesha respect karunga.
 
-I cannot promise that every day will be perfect or that life will always be easy. But I hope that even as we grow, change, and follow our dreams, we never lose the bond that makes this friendship special.
+❤️ 2. Jab bhi tum khush hogi, tumhari khushi mein dil se khush hounga aur jab udaas hogi, tumhari baat sunne ki koshish karunga.
 
-I hope you always find reasons to smile, courage to follow your dreams, and people who remind you how wonderful you are.
+🌸 3. Kabhi jaan-bujhkar tumhara dil nahi dukhaunga. Agar galti ho gayi, toh sorry bolne mein ego nahi rakhunga.
 
-And whenever you need someone to laugh with, cry with, talk to, or simply sit beside you, I hope you know that you have a friend in me.
+😊 4. Tumhare saath hasi-mazaak, silly talks aur chhoti-chhoti yaadein banata rahunga.
 
-Happy Birthday, my best friend.
+🤗 5. Tum busy ho ya reply na kar pao, toh tumhari space aur time ki respect karunga.
 
-You deserve a lifetime of beautiful memories. 💗🌸`,
+💫 6. Kabhi hamare beech misunderstanding ho, toh friendship khatam karne ke bajaye baat karke suljhaane ki koshish karunga.
+
+🌈 7. Promise karta hoon ki tumhari life mein ek aisa friend banne ki koshish karunga, jiske saamne tum bina soche apni baatein share kar sako.
+
+And my last promise...
+Main ye promise nahi karta ki main duniya ka perfect friend banunga, lekin itna zaroor promise karta hoon ki ek achha aur genuine friend banne ki poori koshish karunga.
+
+Meri bas ek chhoti si wish hai...
+Hamari dosti sirf aaj tak nahi, balki aane wale kai khoobsurat saalon tak bani rahe. ❤️
+
+Friendship is not about being together every day, it's about knowing that someone genuinely cares.
+
+Forever hoping to be your favourite friend! ❤️
+
+— YOUR_NAME 🌸`,
     replayButtonText: "REPLAY OUR ADVENTURE 🔄",
     gardenButtonText: "VISIT OUR MEMORY GARDEN 📸"
   }
