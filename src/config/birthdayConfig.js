@@ -210,17 +210,22 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
     waxSealText: "Click the Wax Seal to Open 💌",
     nextButtonText: "UNLOCK THE SECRET GIFT BOX 🎁",
     paragraphs: [
-      "Hey Bestie, 💗",
-      "I don't think I say this enough, but I'm genuinely grateful to have you in my life.",
-      "Thank you for all the random conversations, the uncontrollable laughter, the silly arguments, the little moments, and the memories that have become such a beautiful part of my life.",
-      "You have a special place in my world, and I'm really glad that our paths crossed.",
-      "I hope this new year of your life brings you happiness that stays, dreams that come true, people who appreciate you, and moments that make your heart feel full.",
-      "Whenever life gets difficult, I hope you remember how capable, beautiful, and special you are.",
-      "No matter how busy life becomes, I hope we always find reasons to laugh together, make new memories, and remain the same two idiots who understand each other in our own little way. 😂💗",
-      "Thank you for being YOU.",
-      "Happy Birthday, my best girl! 🎂🌸"
+      "Dear Priya ❤️",
+      "Pata nahi tumhe ye letter padhkar kaisa lagega, lekin aaj mann ki kuch baatein likhne ka socha.",
+      "Dekho Priya, zindagi mein bahut se log milte hain. Kuch log sirf naam ke liye milte hain, kuch thode waqt ke liye aur kuch aise hote hain jo bina kisi wajah ke bhi apne se lagne lagte hain. Tum unhi logon mein se ek ho.",
+      "Main ye nahi kahunga ki hum best friends hain, kyunki dosti ka koi naam dene se pehle use dil se mehsoos karna zaroori hota hai.",
+      "Bas itna kehna chahta hoon ki tumse baat karke achha lagta hai. Kabhi tumhari chhoti si baat chehre par smile le aati hai, toh kabhi tumhara ek message bhi din ko thoda behtar bana deta hai.",
+      "Mujhe nahi pata tumhari life mein kitne special friends hain, lekin meri ek chhoti si wish hai ki kabhi tumhari favourite friends list mein mera naam bhi ho.",
+      "Main tumse roz baat karne ka promise nahi maangta, na hi har waqt attention chahta hoon. Bas jab bhi baat ho, dil se ho. Kabhi hasi-mazaak ho, kabhi serious baatein, kabhi bina kisi topic ke hi baatein hoti rahein.",
+      "Aur haan, agar kabhi tum pareshan ho, toh bina soche mujhse share kar sakti ho. Main shayad har problem solve na kar paun, lekin tumhari baat sunne ke liye zaroor rahunga.",
+      "Ek baat kahun?",
+      "Best friend banana koi competition nahi hai, jahan kisi ko jeetna hota hai. Ye toh ek khoobsurat rishta hai jo waqt, bharose aur care se apne aap ban jata hai.",
+      "Bas dil se chahta hoon ki ek din tum khud kaho...",
+      "“Satish, tum sirf mere friend nahi, mere best friend ho.” ❤️",
+      "Tab shayad mujhe kuch kehne ki zaroorat hi nahi padegi, kyunki meri ye chhoti si wish poori ho chuki hogi.",
+      "Take care, Priya. Hamesha khush rehna! ❤️"
     ],
-    signature: "With lots of love,\nYOUR BEST FRIEND ❤️"
+    signature: "— Tumhara ek achha dost,\nSatish ❤️"
   },
 
   // -------------------------------------------------------------
