@@ -36,17 +36,40 @@ export default function LevelRewardModal({
           className="modal-content"
           onClick={(e) => e.stopPropagation()}
           style={{
-            maxWidth: 440,
-            width: '92%',
+            maxWidth: 460,
+            width: '94%',
+            maxHeight: '90vh',
+            overflowY: 'auto',
             padding: '24px 20px',
             textAlign: 'center',
             borderRadius: 24,
             background: 'linear-gradient(180deg, #FFFFFF 0%, #FFF5F9 100%)',
             border: '2px solid #F8AFCB',
             boxShadow: '0 16px 40px rgba(194, 24, 91, 0.22)',
-            animation: 'fadeInScene 0.35s ease'
+            animation: 'fadeInScene 0.35s ease',
+            position: 'relative'
           }}
         >
+          {/* Top Close Button */}
+          <button
+            type="button"
+            className="icon-btn"
+            onClick={onProceed}
+            style={{
+              position: 'absolute',
+              top: 14,
+              right: 14,
+              width: 32,
+              height: 32,
+              background: '#FFE4EF',
+              color: 'var(--rose-deep)'
+            }}
+            title="Continue"
+            aria-label="Continue"
+          >
+            <X size={16} />
+          </button>
+
           {/* Header Badge */}
           <div
             style={{
@@ -60,7 +83,7 @@ export default function LevelRewardModal({
               borderRadius: 20,
               fontSize: '0.85rem',
               fontWeight: 700,
-              marginBottom: 12
+              marginBottom: 10
             }}
           >
             <Sparkles size={16} color="var(--rose-pink)" />
@@ -70,10 +93,10 @@ export default function LevelRewardModal({
           <h3
             style={{
               fontFamily: 'var(--font-hand)',
-              fontSize: '2rem',
+              fontSize: '1.9rem',
               color: 'var(--rose-deep)',
-              margin: '4px 0 12px',
-              lineHeight: 1.1
+              margin: '2px 0 10px',
+              lineHeight: 1.15
             }}
           >
             {rewardData.title}
@@ -83,12 +106,12 @@ export default function LevelRewardModal({
           <div
             style={{
               background: '#ffffff',
-              padding: '12px 12px 16px',
-              borderRadius: 14,
+              padding: '12px 12px 14px',
+              borderRadius: 16,
               boxShadow: '0 8px 24px rgba(194, 24, 91, 0.12)',
               border: '1px solid #FFE4EF',
-              margin: '10px auto 16px',
-              maxWidth: 320,
+              margin: '8px auto 14px',
+              maxWidth: 350,
               position: 'relative'
             }}
           >
@@ -108,7 +131,7 @@ export default function LevelRewardModal({
             <div
               style={{
                 width: '100%',
-                height: 250,
+                height: 'clamp(230px, 38vh, 310px)',
                 borderRadius: 10,
                 overflow: 'hidden',
                 background: '#FFF5F8',
@@ -130,8 +153,8 @@ export default function LevelRewardModal({
                   }
                 }}
                 style={{
-                  width: '100%',
-                  height: '100%',
+                  maxWidth: '100%',
+                  maxHeight: '100%',
                   objectFit: 'contain',
                   borderRadius: 8
                 }}
@@ -160,20 +183,20 @@ export default function LevelRewardModal({
 
             <p
               style={{
-                fontSize: '0.88rem',
+                fontSize: '0.92rem',
                 color: 'var(--text-main)',
                 fontStyle: 'italic',
-                marginTop: 10,
-                lineHeight: 1.4,
-                marginBottom: 0
+                marginTop: 12,
+                lineHeight: 1.45,
+                marginBottom: 2
               }}
             >
-              “{rewardData.caption}”
+              {rewardData.caption}
             </p>
           </div>
 
           {/* Action Button */}
-          <div style={{ marginTop: 14 }}>
+          <div style={{ marginTop: 12 }}>
             <button
               type="button"
               className="btn-primary"
@@ -241,3 +264,4 @@ export default function LevelRewardModal({
     </>
   );
 }
+

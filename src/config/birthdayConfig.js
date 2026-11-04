@@ -97,35 +97,35 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
   // -------------------------------------------------------------
   levelRewards: {
     1: {
-      photo: "/assets/reward-level-1.jpg",
+      photo: "/assets/reward-level-1.png",
       fallbackPhoto: "/assets/memory-1.jpg",
-      badge: "Level 1 Vault Cleared! 🔐✨",
-      title: "Secret Memory #1 Unlocked 🌸",
-      caption: "Super sharp detective brain! Look at this bright, beautiful smile.",
+      badge: "Level 1 Vault Cleared! 🔐🌸",
+      title: "Mahadev Ke Darbar Me Ek Pyari Si Smile 🔱✨",
+      caption: "“Bholenath ki kripa aur unka aashirwad hamesha tumhare saath rahe. Is pure aur divine smile se pyari koi cheez nahi!” — Satish 🌸",
       nextButtonText: "PROCEED TO LEVEL 2 💗"
     },
     2: {
-      photo: "/assets/reward-level-2.jpg",
+      photo: "/assets/reward-level-2.png",
       fallbackPhoto: "/assets/memory-2.jpg",
-      badge: "Level 2 Secret Phrase Solved! 🎀✨",
-      title: "Secret Memory #2 Unlocked 🧸💛",
-      caption: "Friendship phrase unlocked! Always bringing endless joy and positivity.",
+      badge: "Level 2 Secret Decoded! 🎀✨",
+      title: "Dangal, Popcorn & Ultimate Cozy Vibes 🍿🎬",
+      caption: "“Dangal dekhte hue popcorn ka maza aur ye cute focused look! Cozy vibes, silly talks aur hamari endless yaadein.” — Satish 🧸",
       nextButtonText: "PROCEED TO LEVEL 3 🎀"
     },
     3: {
-      photo: "/assets/reward-level-3.jpg",
+      photo: "/assets/reward-level-3.png",
       fallbackPhoto: "/assets/priya-cake-wish.jpg",
       badge: "Level 3 Hearts Connected! ⚡💖",
-      title: "Secret Memory #3 Unlocked 🎂✨",
-      caption: "The magic ribbon is flowing! A sweet moment captured forever.",
+      title: "The Certified Samosa Lover 🥟😋",
+      caption: "“Ek taraf duniya ki saari baatein aur ek taraf Priya ke hot crispy samose! Ye foodie smile hi tumhari asli cuteness hai.” — Satish 🌸",
       nextButtonText: "PROCEED TO LEVEL 4 🃏"
     },
     4: {
-      photo: "/assets/reward-level-4.jpg",
+      photo: "/assets/reward-level-4.png",
       fallbackPhoto: "/assets/memory-4.jpg",
-      badge: "Level 4 Cards Matched! 🏆🌸",
-      title: "Secret Memory #4 Unlocked 👭🎉",
-      caption: "Memory champion! Surrounding the birthday girl with love and smiles.",
+      badge: "Level 4 Memory Match Master! 🏆✨",
+      title: "Desi Girl Swag in Pink Saree 🥻💖",
+      caption: "“Traditional saree, jhumke aur ye killer mirror selfie! Truly looking like a royal birthday queen in pink.” — Satish 👑🌸",
       nextButtonText: "ENTER MINDCRAFT FORGE ⛏️🧠"
     }
   },
