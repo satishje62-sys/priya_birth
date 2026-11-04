@@ -93,6 +93,44 @@ Put on your thinking cap! Ready to unlock your surprises? 🥹🧠💗`,
   },
 
   // -------------------------------------------------------------
+  // 7.5 LEVEL REWARDS — SECRET MEMORY PHOTOS (LEVELS 1 TO 4)
+  // -------------------------------------------------------------
+  levelRewards: {
+    1: {
+      photo: "/assets/reward-level-1.jpg",
+      fallbackPhoto: "/assets/memory-1.jpg",
+      badge: "Level 1 Vault Cleared! 🔐✨",
+      title: "Secret Memory #1 Unlocked 🌸",
+      caption: "Super sharp detective brain! Look at this bright, beautiful smile.",
+      nextButtonText: "PROCEED TO LEVEL 2 💗"
+    },
+    2: {
+      photo: "/assets/reward-level-2.jpg",
+      fallbackPhoto: "/assets/memory-2.jpg",
+      badge: "Level 2 Secret Phrase Solved! 🎀✨",
+      title: "Secret Memory #2 Unlocked 🧸💛",
+      caption: "Friendship phrase unlocked! Always bringing endless joy and positivity.",
+      nextButtonText: "PROCEED TO LEVEL 3 🎀"
+    },
+    3: {
+      photo: "/assets/reward-level-3.jpg",
+      fallbackPhoto: "/assets/priya-cake-wish.jpg",
+      badge: "Level 3 Hearts Connected! ⚡💖",
+      title: "Secret Memory #3 Unlocked 🎂✨",
+      caption: "The magic ribbon is flowing! A sweet moment captured forever.",
+      nextButtonText: "PROCEED TO LEVEL 4 🃏"
+    },
+    4: {
+      photo: "/assets/reward-level-4.jpg",
+      fallbackPhoto: "/assets/memory-4.jpg",
+      badge: "Level 4 Cards Matched! 🏆🌸",
+      title: "Secret Memory #4 Unlocked 👭🎉",
+      caption: "Memory champion! Surrounding the birthday girl with love and smiles.",
+      nextButtonText: "ENTER MINDCRAFT FORGE ⛏️🧠"
+    }
+  },
+
+  // -------------------------------------------------------------
   // 8. LEVEL 5 — MINDCRAFT: FRIENDSHIP BRAINSTORM LAB (CRAFTING PUZZLE)
   // -------------------------------------------------------------
   mindcraft: {

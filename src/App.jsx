@@ -13,6 +13,7 @@ import SceneBirthdayCake from './components/SceneBirthdayCake';
 import SceneCelebration from './components/SceneCelebration';
 import SceneSecretEnding from './components/SceneSecretEnding';
 import LevelModal from './components/LevelModal';
+import LevelRewardModal from './components/LevelRewardModal';
 import { clearProgress } from './utils/storage';
 import { playSparkle, musicBoxPlayer, birthdaySongPlayer, getAudioContext } from './utils/audioSynthesis';
 
@@ -20,6 +21,7 @@ export default function App() {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [completedLevels, setCompletedLevels] = useState([]);
   const [isLevelModalOpen, setIsLevelModalOpen] = useState(false);
+  const [rewardLevel, setRewardLevel] = useState(null);
 
   // Always start from Level 1 (Magical Invitation) on fresh open or refresh
   useEffect(() => {
@@ -76,17 +78,33 @@ export default function App() {
   // Complete a stage and advance
   const handleStageComplete = (stageIdx) => {
     const nextCompleted = Array.from(new Set([...completedLevels, stageIdx]));
-    const nextLevel = Math.min(10, stageIdx + 1);
-
     setCompletedLevels(nextCompleted);
-    setCurrentLevel(nextLevel);
 
-    playSparkle();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Show secret photo reward modal after levels 1, 2, 3, 4
+    if (stageIdx >= 1 && stageIdx <= 4) {
+      setRewardLevel(stageIdx);
+    } else {
+      const nextLevel = Math.min(10, stageIdx + 1);
+      setCurrentLevel(nextLevel);
+      playSparkle();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  // Proceed after viewing reward photo
+  const handleProceedFromReward = () => {
+    if (rewardLevel !== null) {
+      const nextLevel = Math.min(10, rewardLevel + 1);
+      setRewardLevel(null);
+      setCurrentLevel(nextLevel);
+      playSparkle();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   // Jump to specific level
   const handleSelectLevel = (levelIdx) => {
+    setRewardLevel(null);
     setCurrentLevel(levelIdx);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -97,6 +115,7 @@ export default function App() {
       clearProgress();
       birthdaySongPlayer.stop();
       musicBoxPlayer.stop();
+      setRewardLevel(null);
       setCurrentLevel(0);
       setCompletedLevels([]);
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -168,6 +187,13 @@ export default function App() {
         currentLevel={currentLevel}
         completedLevels={completedLevels}
         onSelectLevel={handleSelectLevel}
+      />
+
+      {/* Level Completion Photo Reward Modal */}
+      <LevelRewardModal
+        isOpen={rewardLevel !== null}
+        levelIndex={rewardLevel}
+        onProceed={handleProceedFromReward}
       />
     </div>
   );
